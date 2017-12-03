@@ -12,7 +12,7 @@ def parse_org(filename):
   with open(filename) as f: org = f.read()
  #p = r"^#\+(\w)\:[ ]*(\w+)$"
  #p = r"#\+([A-z0-9]+):[ ]*([A-z0-9 ]+)"
-  p = r"#\+(.*):[ ]*(.*)"
+  p = r"#\+([A-Za-z0-9]*):[ ]*([A-Za-z0-9.,:/ ]*)"
   ms = re.findall(p, org)
   if ms is not None: 
     for m in ms:
