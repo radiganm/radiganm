@@ -10,8 +10,6 @@ INVARIANT_PUBLICATION = 'f379e9385edeef35627a231754162bbee863be27'
 def parse_org(filename):
   tags = OrderedDict([])
   with open(filename) as f: org = f.read()
- #p = r"^#\+(\w)\:[ ]*(\w+)$"
- #p = r"#\+([A-z0-9]+):[ ]*([A-z0-9 ]+)"
   p = r"#\+([A-Za-z0-9]*):[ ]*([A-Za-z0-9.,:'/ ]*)"
   ms = re.findall(p, org)
   if ms is not None: 
