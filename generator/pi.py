@@ -3,17 +3,38 @@
 
 import os
 from collections import OrderedDict
+import re
 
 INVARIANT_PUBLICATION = 'f379e9385edeef35627a231754162bbee863be27'
+
+def parse_org(filename):
+  tags = OrderedDict([])
+  with open(filename) as f: org = f.read()
+ #p = r"^#\+(\w)\:[ ]*(\w+)$"
+ #p = r"#\+([A-z0-9]+):[ ]*([A-z0-9 ]+)"
+  p = r"#\+(.*):[ ]*(.*)"
+  ms = re.findall(p, org)
+  if ms is not None: 
+    for m in ms:
+      tags[m[0]] = m[1]
+  return tags
 
 def get_content(repo):
   content = OrderedDict([])
   content['repo'] = repo
+  ## GH Markdown File
   filename = "../%s/README.md" % repo
   if os.path.isfile(filename):
     content['README'] = filename
   else:
-    content['README'] = 'N/A'
+    content['README'] = None
+  ## Org-Mode File
+  filename = "../%s/README.org" % repo
+  if os.path.isfile(filename):
+    content['tags'] = parse_org(filename)
+  else:
+    content['tags'] = None
+  ##
   return content
 
 def get_meta(repos):
