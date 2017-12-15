@@ -52,6 +52,7 @@
     {% set documentation = meta['tags']['DOCUMENTATION']           %}
     {% set license       = meta['tags']['LICENSE']                 %}
     {% set spdx          = meta['tags']['SPDX-License-Identifier'] %}
+    {% set see           = meta['tags']['SEE-ALSO']                %}
     <h3><a name="{{repo}}" class="anchor" href="https://github.com/radiganm/{{repo}}"><span class="octicon octicon-link"></span>{{repo}}</a></h3>
     <p>
       {% if title is defined %}
@@ -65,6 +66,9 @@
       {% endif %}
       {% if homepage is defined %}
       Project Homepage: <a href="{{homepage}}"/>{{homepage}}</a><br/>
+      {% endif %}
+      {% if see is defined %}
+      See Also: <a href="{{see}}"/>{{see}}</a><br/>
       {% endif %}
       {% if pdf is defined %}
       PDF: <a href="{{pdf}}"/>{{title}}</a><br/>
