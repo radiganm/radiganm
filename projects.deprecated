@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Radigan" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Project Index</title>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <!--a id="forkme_banner" href="https://github.com/radiganm/radiganm">View on GitHub</a-->
+
+          <h1 id="project_title">Project Index</h1>
+          <h2 id="project_tagline"></h2>
+
+            <!--section id="downloads">
+              <a class="zip_download_link" href="https://github.com/radiganm/radiganm/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/radiganm/radiganm/tarball/master">Download this project as a tar.gz file</a>
+            </section-->
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+<h3><a name="librad" class="anchor" href="#librad"><span class="octicon octicon-link"></span></a>RAD Library</h3>
+<p>The <a href="http://radiganm.github.io/lib">RAD Library</a> contains software for Real-time Digital Signal Processing in Fortan, C, and Rust.  The current emphasis provides capabilities for Linear Algebra, 3D Graphics, Software-Defined Radios (SDRs), and Networking.</p>
+
+<h3><a name="ailab" class="anchor" href="#ailab"><span class="octicon octicon-link"></span></a>AI Lab</h3>
+<p>The <a href="http://radiganm.github.io/librad">AI Lab</a> project is a scientific computing and simulation environment based on the <a href="http://radiganm.github.io/librad">RAD Library</a>, with an emphasis on ANSI Common Lisp and Python.
+</p>
+
+<h3><a name="rad-jvm" class="anchor" href="#rad-jvm"><span class="octicon octicon-link"></span></a>RAD-JVM</h3>
+<p>The <a href="http://radiganm.github.io/rad-jvm">RAD-JVM</a> project is a scientific computing environment based on Java Virtual Machine bindings to the <a href="http://radiganm.github.io/librad">RAD Library</a>.
+</p>
+
+<h3><a name="notes" class="anchor" href="#notes"><span class="octicon octicon-link"></span></a>Notes</h3>
+<p>Some <a href="http://radiganm.github.io/notes">Notes</a> on various topics.</p>
+
+<h3><a name="quant" class="anchor" href="#quant"><span class="octicon octicon-link"></span></a>Quant</h3>
+<p>The <a href="http://radiganm.github.io/quant">Quant Project</a> provides software tools for Quantitative Finance.</p>
+
+<h3><a name="naomi" class="anchor" href="#naomi"><span class="octicon octicon-link"></span></a>NAOMI</h3>
+<!--p>The <a href="http://radiganm.github.io/naomi">NAOMI Project</a> provides a software framework for high-throughput computing (HTC) workflows using automated construction of directed acyclic graphs (DAGs).</p-->
+<p>The <a href="http://radiganm.github.com/naomi">NAOMI Project</a> provides a software framework for high-throughput computing (HTC) workflows using automated construction of directed acyclic graphs (DAGs).</p>
+
+<h3><a name="multimedia" class="anchor" href="#multimedia"><span class="octicon octicon-link"></span></a>Multimedia</h3>
+<p><a href="http://radiganm.github.io/radiganm/multimedia.html">Multimedia Projects</a> is a list of multimedia projects.</p>
+
+<h3><a name="environment" class="anchor" href="#environment"><span class="octicon octicon-link"></span></a>environment</h3>
+<p>Linux <a href="http://radiganm.github.com/environment">environment</a> configuration files, primarily focused on Debian variants.</p>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">All projects maintained by <a href="https://github.com/radiganm">Mac Radigan</a></p>
+        <!--p>Published with <a href="http://pages.github.com">GitHub Pages</a></p-->
+      </footer>
+    </div>
+
+  </body>
+</html>
